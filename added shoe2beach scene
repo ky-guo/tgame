@@ -1,0 +1,173 @@
+
+print ("Clikc Shift to starts")
+#add code that activates all other code
+
+
+shoeNames = ("Michael Kors Highheels", "Classic Vans", "Nike Roshe")
+for i in range (0, 3):
+    print (i + 1, shoeNames[i])
+
+pickedShoe = int(input("Pick a shoe! Type the corresponding number next to the shoe to continue the game."))
+printPickedShoe = str(pickedShoe)
+print ("You picked shoe number " + printPickedShoe + ". Generating Setting...")
+gov = "Game Over"
+
+#random setting generator
+import random
+x = random.randint(1, 10)
+
+#for testing
+#x = "3"
+#print(x)
+y = int(x)
+
+if (pickedShoe == 1):
+
+    if (y==1 or y==4 or y==7):
+        print("You're climbing mountains!!! :DD")
+        top = str(input("Do you want to go up to the top? Yes or No? (Cap Sensitive)"))
+        if (top == "Yes"):
+            print ("You got blisters!!! T-T")
+            shoeOff = str(input("Do you want to take your heels off? Yes or No?"))
+            if (shoeOff == "Yes"):
+                print ("You're a potato.")
+                print (gov)
+            elif (shoeOff == "No"):
+                print ("You've been infected by some deadly bacteria from walking bare foot.")
+                bacteria = str(input("Do you want to seek help?"))
+                if (bacteria == "Yes"):
+                     print ("You're headed to the hospital and you survive but mission is unsuccessful.")
+                     print (gov)
+                if (bacteria == "No"):
+                    print ("You reach the top of the mountian. Shortly after, you die from the infection.")
+                    print (gov)
+        elif (top == "No"):
+            print ("You are the ultimate failure! BOO ):<")
+            print (gov)
+            #end code/ go back to home
+
+    elif (y==2 or y==5 or y==8):
+        print("You're walking on cobblestones.")
+        hang = input("Do you want to go meet with your friends? Yes or No? (Case Sensitive)")
+        if (hang == "Yes"):
+            print ("Your heel breaks!")
+            turnAround = str(input("Do you want to turn around? Yes or No?"))
+            if (turnAround == "Yes"):
+                print ("Your friend now hates you for ditching them.")
+            elif (turnAround == "No"):
+                print ("You keep walking like a champ.")
+                takeOff = str(input("Do you want to take your shoes off? Yes or No?"))
+                if (takeOff == "Yes"):
+                    print ("You step in a crack!")
+                    hospital = str(input("Do you want to go to the hospital? Yes or No?"))
+                    if (hospital == "Yes"):
+                        print ("You live!! Woohoo!!")
+                    elif (takeOff == "No"):
+                        print ("You look awkward! You're now dead.")
+                    elif(hospital == "No"):
+                        print ("You passed out and your friend is taking you to hospital. You'll live!")
+        elif (hang == "No"):
+            print("Go home. You're a loner.")
+
+    elif (y==3 or y==6 or y==9):
+        print("Your friends call you to ask if you want to go to the beach.")
+        beachDe = str(input("Do you want to go? Yes or No? (Case Sensitive)"))
+        if (beachDe == "Yes"):
+            print ("You friends are playing in the water.")
+            water = str(input("They ask you if you want to go to the water. Yes or No?"))
+            if (water == "Yes"):
+                print ("Oh no! You just realize that your heels might get stuck in the wet sand.")
+                heinsand = str(input("Do you want to go back to the towel area? Yes or No?"))
+                if (heinsand == "Yes"):
+                    print ("You go back to the towels and put some sunscreen. Unfortunatly, the sunscreen is cheap and you get sunburned.")
+                    print (gov)
+                if (heinsand == "No"):
+                    import random
+                    k = random.randint(1,10)
+                    if (k < 5):
+                        print ("Oh no! Your heels get stuck in the wet sand and is unwilling to come out.")
+                        shoetug = str(input("Do you want to tug harder to get your shoe out? Yes or No?"))
+                        if (shoetug == "Yes"):
+                            print ("Your shoes still do not come off.")
+                            takeoff = str(input("Do you want to take off your shoes? Yes or No?"))
+                            if (takeoff == "Yes"):
+                                print ("You leave your shoes in the sand to play with your friends. When you come back someone has stolen your shoes. You cry.")
+                                print (gov)
+                            if (takeoff == "No"):
+                                print ("You decide not to take your shoe off so you sulk while your friends have fun. You also get a sunburn.")
+                                print (gov)
+                        if (shoetug == "No"):
+                            print ("You're forever stuck in the sand. You also get a 5th degree sunburn.")
+                            print (gov)
+                    if (k > 5 or k == 5):
+                        print ("Lucky you! You heels do not get stuck in the wet sand.")
+                        print ("You go to your friends in the water and have a blast.")
+            elif (water == "No"):
+                print ("You stay on the towels and put some sunscreen. Unfortunatly, the sunscreen is cheap and you get sunburned.")
+                print (gov)
+        elif (beachDe == "No"):
+            print ("You're a stay home potato.")
+            print (gov)
+            #end code/ go back to home
+
+
+elif (pickedShoe == 2):
+
+    if (y==1 or y==4 or y==7):
+        print("You're climbing mountains!!! :DD")
+        top = str(input("Do you want to go up to the top? Yes or No? (Case Sensitive)"))
+        if (top == "Yes"):
+            print ("The sole of your shoes have eroded!")
+            shoeOff = str(input("Do you want to keep going? Yes or No?"))
+            if (shoeOff == "Yes"):
+                print ("You tumble to your death! Game Over.")
+            elif (shoeOff == "No"):
+                print ("You get eaten by a bear. Game Over.")
+
+        elif (top == "No"):
+            print ("Uh-oh! You've been eaten by a bear!!")
+            #end code/ go back to home
+
+#    elif (y==2 or y==5 or y==8):
+
+    elif (y==3 or y==6 or y==9):
+        print("Your friends call you to ask if you want to go to the beach.")
+        beachDe = str(input("Do you want to go? Yes or No? (Case Sensitive)"))
+        if (beachDe == "Yes"):
+            print ("You friends are playing in the water.")
+            water = str(input("They ask you if you want to go to the water. Yes or No?"))
+            if (water == "Yes"):
+                print ("Sand seeks into your shoes and you feel the grains of sand against your sock.")
+                sandin = str(input("Do you want to take off your shoe? Yes or No?"))
+                if (sandin == "Yes"):
+                    print ("You took of your shoe! The sand is scorching hot and you burn the soles of you foot.")
+                    sandburn = str(input("Do you want to seek medical help? Yes or No?"))
+                    if (sandburn == "Yes"):
+                        print ("You leave your friends and go to the hospital.")
+                        print ("Your friends are angry at you and you lose touch with them.")
+                        print (gov)
+                    elif (sandburn == "No"):
+                        print ("You decide not to seek help and enjoy the day with your friends.")
+                        print ("However, the pleasure is short lived since you become cranky due to your skin injuries and start a fight with someone in your clique.")
+                        print ("The day ends in broken friendships and you suffer for weeks of a burned foot.")
+                        print (gov)
+                elif (sandin == "No"):
+                    print ("You decide not to take off your vans and head towards the water towards your friends")
+            elif (water == "No"):
+                print ("You stay on the towels and put some sunscreen. Unfortunatly, the sunscreen is cheap and you get sunburned.")
+                print (gov)
+        elif (beachDe == "No"):
+            print ("You're a stay home potato.")
+            print (gov)
+        #end code/ go back to home
+
+
+
+
+
+
+
+#elif (pickedShoe == 3):
+
+
+#else:
